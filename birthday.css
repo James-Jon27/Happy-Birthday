@@ -1,0 +1,98 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, violet, blue, green);
+            background-size: 1400% 100%;
+            animation: blueWave 20s ease infinite;
+        }
+
+
+        @keyframes blueWave {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+
+        .container:hover {
+            cursor: pointer;
+            animation: glitter 1s infinite;
+        }
+
+        @keyframes glitter {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .glitter {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: sparkle 1s ease-out forwards;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 300px;
+        }
+
+        #cake {
+            width: 150px;
+            transition: transform 1s, left 2s, top 2s;
+            animation: dance 2s infinite alternate;
+        }
+
+        #cake:hover {
+            transform: scale(1.5);
+        }
+
+        @keyframes dance {
+            0% {
+                transform: rotate(-10deg);
+            }
+
+            50% {
+                transform: scale(1.5);
+            }
+
+            100% {
+                transform: rotate(10deg);
+            }
+        }
+
+        #message {
+            display: none;
+            color: #ff0e0e;
+            font-size: 80px;
+            font-weight: bold;
+            margin-top: 200px;
+        }
+
+        #cake:hover+#message {
+            display: block;
+        }
