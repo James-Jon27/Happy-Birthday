@@ -2,7 +2,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(90deg, violet, blue, green);
+            background: linear-gradient(90deg, pink, purple, blue);
             background-size: 1400% 100%;
             animation: blueWave 20s ease infinite;
         }
