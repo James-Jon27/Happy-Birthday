@@ -4,7 +4,7 @@
             padding: 0;
             background: linear-gradient(90deg, pink, green, purple, pink);
             background-size: 1400% 100%;
-            animation: blueWave 10s ease-in-out infinite;
+            animation: blueWave 10s ease infinite;
         }
 
 
