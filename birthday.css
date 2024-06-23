@@ -1,98 +1,85 @@
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(90deg, pink, green, purple, pink);
-            background-size: 1400% 100%;
-            animation: blueWave 10s ease infinite;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, pink, green, purple, pink);
+    background-size: 200% 100%;
+    animation: blueWave 15s ease infinite;
+}
 
+@keyframes blueWave {
+    0% {
+        background-position: -10% 50%;
+    }
 
-        @keyframes blueWave {
-            0% {
-                background-position: -8% 50%;
-            }
+    100% {
+        background-position: 110% 50%;
+    }
+}
 
-            100% {
-                background-position: 100% 50%;
-            }
-        }
+.container {
+    text-align: center;
+    margin-top: 20vh; /* Adjusted for better positioning */
+}
 
+.glitter {
+    position: absolute;
+    width: 1.5vw; /* Responsive size */
+    height: 1.5vw; /* Responsive size */
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sparkle 1s ease-out forwards;
+}
 
-        .container:hover {
-            cursor: pointer;
-            animation: glitter 1s infinite;
-        }
+@keyframes sparkle {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
 
-        @keyframes glitter {
-            0% {
-                filter: hue-rotate(0deg);
-            }
+    100% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+}
 
-            100% {
-                filter: hue-rotate(360deg);
-            }
-        }
+#cake {
+    width: 15vw; /* Responsive size */
+    transition: transform 0.5s, left 1s, top 1s;
+    animation: dance 2s infinite alternate;
+}
 
-        .glitter {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: white;
-            border-radius: 50%;
-            pointer-events: none;
-            animation: sparkle 1s ease-out forwards;
-        }
+#cake:hover {
+    transform: scale(1.5);
+}
 
-        @keyframes sparkle {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
+@keyframes dance {
+    0% {
+        transform: rotate(-10deg);
+    }
 
-            100% {
-                transform: scale(0.1);
-                opacity: 0;
-            }
-        }
+    50% {
+        transform: scale(1.5);
+    }
 
-        .container {
-            text-align: center;
-            margin-top: 300px;
-        }
+    100% {
+        transform: rotate(10deg);
+    }
+}
 
-        #cake {
-            width: 150px;
-            transition: transform 1s, left 2s, top 2s;
-            animation: dance 2s infinite alternate;
-        }
+#message {
+    display: none;
+    color: #ff0e0e;
+    font-family: Arial, sans-serif; /* Fallback font */
+    font-size: 6vw; /* Responsive font size */
+    font-weight: bold;
+    margin-top: 10vh; /* Adjusted for better positioning */
+}
 
-        #cake:hover {
-            transform: scale(1.5);
-        }
-
-        @keyframes dance {
-            0% {
-                transform: rotate(-10deg);
-            }
-
-            50% {
-                transform: scale(1.5);
-            }
-
-            100% {
-                transform: rotate(10deg);
-            }
-        }
-
-        #message {
-            display: none;
-            color: #ff0e0e;
-            font-family:system-ui,  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 90px;
-            font-weight: bold;
-            margin-top: 200px;
-        }
+#cake:hover + #message {
+    display: block;
+}
 
         #cake:hover+#message {
             display: block;
