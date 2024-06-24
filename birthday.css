@@ -2,18 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, pink, green, purple, pink);
+    background: linear-gradient(90deg, pink, green, purple, pink, green);
     background-size: 200% 100%;
-    animation: blueWave 15s ease infinite;
+    animation: blueWave 10s ease infinite;
 }
 
 @keyframes blueWave {
     0% {
-        background-position: -10% 50%;
+        background-position: 0% 50%;
     }
 
     100% {
-        background-position: 110% 50%;
+        background-position: 100% 50%;
     }
 }
 
@@ -26,7 +26,7 @@ body {
     position: absolute;
     width: 1.5vw; /* Responsive size */
     height: 1.5vw; /* Responsive size */
-    background-color: white;
+    background-color: #2cc7c7;
     border-radius: 50%;
     pointer-events: none;
     animation: sparkle 1s ease-out forwards;
@@ -51,9 +51,7 @@ body {
     animation: dance 2s infinite alternate;
 }
 
-#cake:hover {
-    transform: scale(1.5);
-}
+
 
 @keyframes dance {
     0% {
@@ -61,7 +59,7 @@ body {
     }
 
     50% {
-        transform: scale(1.5);
+        transform: scale(2);
     }
 
     100% {
@@ -71,11 +69,11 @@ body {
 
 #message {
     display: none;
-    color: #ff0e0e;
+    color: #2cc7c7;
     font-family: Arial, sans-serif; /* Fallback font */
-    font-size: 6vw; /* Responsive font size */
+    font-size: 3vw; /* Responsive font size */
     font-weight: bold;
-    margin-top: 10vh; /* Adjusted for better positioning */
+    margin-top: 20vh; /* Adjusted for better positioning */
 }
 
 #cake:hover + #message {
