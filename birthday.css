@@ -30,6 +30,7 @@ body {
     border-radius: 50%;
     pointer-events: none;
     animation: sparkle 1s ease-out forwards;
+    cursor: none;
 }
 
 @keyframes sparkle {
