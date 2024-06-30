@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#head {
+    display: none;
+    font-size: 5rem;
+    text-align: center;
+    justify-self: center;
+    text-transform: uppercase;
+    color:  rgb(204, 15, 15);
+}
+
+html, 
+body {
+    background-color: rgb(219, 155, 155);
+}
+
+#title {
+    font-size: 5rem;
+    text-align: center;
+    color:black;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    padding: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+	width: 100%;
+	text-decoration: none;
+    text-align: center;
+}
