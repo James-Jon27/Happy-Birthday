@@ -79,10 +79,7 @@ body {
     margin-top: 20vh; /* Adjusted for better positioning */
 }
 
-#cake:hover + #message {
+a:hover + #message {
     display: block;
 }
 
-        #cake:hover+#message {
-            display: block;
-        }
