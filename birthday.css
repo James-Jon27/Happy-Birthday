@@ -83,3 +83,10 @@ a:hover + #message {
     display: block;
 }
 
+.link > a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+
+}
+
