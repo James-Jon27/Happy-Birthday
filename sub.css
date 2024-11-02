@@ -129,6 +129,9 @@ p {
     padding: 10px;
 }
 
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        .popup { max-width: 300px; }
+
 footer {
     background-color: #250404;
     color: #fff;
